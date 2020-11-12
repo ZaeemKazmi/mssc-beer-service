@@ -1,6 +1,7 @@
 package com.zk.msscbeerservice.web.controller;
 
 import com.zk.msscbeerservice.web.model.BeerDto;
+import com.zk.msscbeerservice.web.model.BeerStyleEnum;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,7 @@ public class BeerController {
     @GetMapping("/{beerId}")
     public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId){
 
-        return new ResponseEntity<>(BeerDto.builder().id(beerId).build(), HttpStatus.OK);
+        return new ResponseEntity<>(BeerDto.builder().id(beerId).beerName("Ginger Ale").beerStyle(BeerStyleEnum.ALE).build(), HttpStatus.OK);
     }
 
     @PostMapping
