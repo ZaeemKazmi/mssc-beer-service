@@ -3,11 +3,10 @@ package com.zk.msscbeerservice.bootstrap;
 import com.zk.msscbeerservice.domain.Beer;
 import com.zk.msscbeerservice.repositories.BeerRepository;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Controller;
 
 import java.math.BigDecimal;
 
-@Controller
+//@Component
 public class BeerLoader implements CommandLineRunner {
 
     public static final String BEER_1_UPC = "0631234200036";
