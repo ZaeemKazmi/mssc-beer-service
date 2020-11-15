@@ -23,6 +23,7 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyBoolean;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
@@ -49,10 +50,10 @@ class BeerControllerTest {
     @Test
     void getBeerById() throws Exception {
         BeerDto beerDto = getValidBeerDto();
-        given(beerService.getById(any(UUID.class))).willReturn(beerDto);
+        given(beerService.getById(any(UUID.class), anyBoolean())).willReturn(beerDto);
 
         mockMvc.perform(get("/api/v1/beer/{beerId}", UUID.randomUUID().toString())
-                .param("iscold", "yes")
+                .param("showInventoryOnHand", "false")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andDo(document("v1/beer-get",
