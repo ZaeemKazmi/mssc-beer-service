@@ -1,4 +1,4 @@
-package com.zk.msscbeerservice.services;
+package com.zk.msscbeerservice.services.brewing;
 
 import com.zk.msscbeerservice.config.JmsConfig;
 import com.zk.msscbeerservice.domain.Beer;
