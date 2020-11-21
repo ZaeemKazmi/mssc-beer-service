@@ -1,9 +1,9 @@
 package com.zk.msscbeerservice.services.brewing;
 
+import com.zk.common.events.BrewBeerEvent;
+import com.zk.common.events.NewInventoryEvent;
 import com.zk.msscbeerservice.config.JmsConfig;
 import com.zk.msscbeerservice.domain.Beer;
-import com.zk.msscbeerservice.events.BrewBeerEvent;
-import com.zk.msscbeerservice.events.NewInventoryEvent;
 import com.zk.msscbeerservice.repositories.BeerRepository;
 import com.zk.msscbeerservice.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;
@@ -14,8 +14,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
-@Service
 @RequiredArgsConstructor
+@Service
 public class BrewBeerListener {
 
     private final BeerRepository beerRepository;

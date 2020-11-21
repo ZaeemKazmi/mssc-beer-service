@@ -1,4 +1,4 @@
-package com.zk.msscbeerservice.events;
+package com.zk.common.events;
 
 import com.zk.msscbeerservice.web.model.BeerDto;
 import lombok.AllArgsConstructor;
