@@ -1,4 +1,4 @@
-package com.zk.msscbeerservice.web.model;
+package com.zk.brewery.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

@@ -1,10 +1,10 @@
 package com.zk.msscbeerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zk.brewery.model.BeerDto;
+import com.zk.brewery.model.BeerStyleEnum;
 import com.zk.msscbeerservice.bootstrap.BeerLoader;
 import com.zk.msscbeerservice.services.BeerService;
-import com.zk.msscbeerservice.web.model.BeerDto;
-import com.zk.msscbeerservice.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

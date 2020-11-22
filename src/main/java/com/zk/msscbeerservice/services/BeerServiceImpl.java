@@ -1,12 +1,12 @@
 package com.zk.msscbeerservice.services;
 
+import com.zk.brewery.model.BeerDto;
+import com.zk.brewery.model.BeerPagedList;
+import com.zk.brewery.model.BeerStyleEnum;
 import com.zk.msscbeerservice.domain.Beer;
 import com.zk.msscbeerservice.repositories.BeerRepository;
 import com.zk.msscbeerservice.web.controller.NotFoundException;
 import com.zk.msscbeerservice.web.mappers.BeerMapper;
-import com.zk.msscbeerservice.web.model.BeerDto;
-import com.zk.msscbeerservice.web.model.BeerPagedList;
-import com.zk.msscbeerservice.web.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;

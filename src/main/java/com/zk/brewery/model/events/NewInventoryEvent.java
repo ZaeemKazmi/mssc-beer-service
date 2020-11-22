@@ -1,6 +1,6 @@
-package com.zk.common.events;
+package com.zk.brewery.model.events;
 
-import com.zk.msscbeerservice.web.model.BeerDto;
+import com.zk.brewery.model.BeerDto;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor

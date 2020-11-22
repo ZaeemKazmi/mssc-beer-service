@@ -1,8 +1,8 @@
 package com.zk.msscbeerservice.web.mappers;
 
+import com.zk.brewery.model.BeerDto;
 import com.zk.msscbeerservice.domain.Beer;
 import com.zk.msscbeerservice.services.inventory.BeerInventoryService;
-import com.zk.msscbeerservice.web.model.BeerDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class BeerMapperDecorator implements BeerMapper {

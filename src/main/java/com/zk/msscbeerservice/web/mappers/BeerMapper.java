@@ -1,7 +1,7 @@
 package com.zk.msscbeerservice.web.mappers;
 
+import com.zk.brewery.model.BeerDto;
 import com.zk.msscbeerservice.domain.Beer;
-import com.zk.msscbeerservice.web.model.BeerDto;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

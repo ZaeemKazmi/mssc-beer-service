@@ -1,6 +1,6 @@
 package com.zk.msscbeerservice.services.brewing;
 
-import com.zk.common.events.BrewBeerEvent;
+import com.zk.brewery.model.events.BrewBeerEvent;
 import com.zk.msscbeerservice.config.JmsConfig;
 import com.zk.msscbeerservice.domain.Beer;
 import com.zk.msscbeerservice.repositories.BeerRepository;
